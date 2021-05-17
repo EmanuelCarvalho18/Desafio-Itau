@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Formulário de Cadastro Pessoal </title>
+    <script type="text/javascript" src="JavaScript/comandos.js"> </script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+</head>
+<body>
+    <p>Formulário de Cadastro Pessoal</p>
+    <form>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" placeholder="Digite seu nome!" name="nome" required>
+  
+    <label for="CPF">CPF: </label>
+    <input type="text" id="CPF" placeholder="Digite seu CPF!" name="CPF" required>
+    <br><br>
+
+    <label for="RG">RG: </label>
+    <input type="text" id="RG" placeholder="Digite seu RG!" name="RG">
+  
+    <label for="Sexo">Sexo: </label>
+    <select id="Sexo" name="Sexo">
+        <option value="Masculino">M</option>
+        <option value="Feminino">F</option>
+    </select></br></br>
+
+    <label for="Endereco">Endereço: </label>
+    <textarea id="Endereco" placeholder="Digite seu Endereço!" name="Endereco" cols="30" rows="4" required></textarea>
+
+    <label for="Numero">Numero: </label>
+    <input type="text" id="Numero" placeholder="Digite o nº de sua residencia!" name="Numero" required></br></br>
+
+    <label for="Bairro">Bairro: </label>
+    <input type="text" id="Bairro" placeholder="Digite o nome do seu Bairro!" name="Bairro">
+
+    <label for="Cidade">Cidade:</label>
+    <input type="text" id="Cidade"  placeholder="Digite o nome da sua cidade!" name="Cidade">
+
+    <label for="Estado">Estado:</label>
+    <select id="Estado" name="Estado">
+		  <option value='AC'>AC</option>
+          <option value='AL'>AL</option>
+          <option value='AM'>AM</option>
+          <option value='AP'>AP</option>
+          <option value='BA'>BA</option>
+          <option value='CE'>CE</option>
+          <option value='DF'>DF</option>
+          <option value='ES'>ES</option>
+          <option value='GO'>GO</option>
+          <option value='MA'>MA</option>
+          <option value='MG'>MG</option>
+          <option value='MS'>MS</option>
+          <option value='MT'>MT</option>
+          <option value='PA'>PA</option>
+          <option value='PB'>PB</option>
+          <option value='PE'>PE</option>
+          <option value='PI'>PI</option>
+          <option value='PR'>PR</option>
+          <option value='RJ'>RJ</option>
+          <option value='RN'>RN</option>
+          <option value='RO'>RO</option>
+          <option value='RR'>RR</option>
+          <option value='RS'>RS</option>
+          <option value='SC'>SC</option>
+          <option value='SE'>SE</option>
+          <option value='SP'>SP</option>
+          <option value='TO'>TO</option>
+	</select></br></br>
+
+    <label for="Cep">Cep: </label>
+    <input type="text" id="Cep" placeholder="Digite o nº cep!" name="Cep"></br></br>
+
+    <label for="TelefoneFixo">Telefone Fixo:</label>
+    <input type="number" id="TelefoneFixo"  placeholder="Digite o nº do seu telefone fixo!" name="TelefoneFixo">
+
+    <label for="TelefoneCelular">Telefone Celular:</label>
+    <input type="number" id="TelefoneCelular"  placeholder="Digite o nº do seu telefone celular!" name="TelefoneCelular" required></br></br>
+
+    <input class="button" type="submit" onclick="Enviar()" name="cadastrar" value="Cadastrar">
+
+
+</body>
+</html>
